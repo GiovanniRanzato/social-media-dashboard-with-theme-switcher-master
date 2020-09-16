@@ -4,6 +4,7 @@
     border-radius: 10px;
     overflow: hidden;
 }
+
 .cardBody{
     height: 215px;
     padding: 24px;
@@ -94,4 +95,19 @@
 }
 .trendStable::before{
     border-color: transparent;
+}
+@media only screen and (min-width:600px){
+    .card{
+        width: 255px;
+    }
+}
+@media only screen and (min-width:900px){
+    .card{
+        width: 385px;
+    }
+}
+@media only screen and (min-width:1400px){
+    .card{
+        width: 255px;
+    }
 }

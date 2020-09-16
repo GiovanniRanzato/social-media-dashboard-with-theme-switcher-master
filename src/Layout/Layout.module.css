@@ -1,8 +1,27 @@
 .header {
+    width: 100%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 }
 .maincontainer{
     padding: 40px 24px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.generalOverview{
+    margin-bottom: 12px;
+}
+@media only screen and (min-width: 600px ){
+    .header{
+        flex-flow: row;
+    }
+    .generalOverview, .dailyOverview{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

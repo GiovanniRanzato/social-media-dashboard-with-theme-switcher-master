@@ -6,6 +6,7 @@ import { LIGHT_THEME_STYLES, DARK_THEME_STYLES, TEXT, DATA_FOLLOWERS, DATA_OVERV
 import classes from './Layout.module.css'
 
 // COMPONETNS
+import Container from '../Hoc/Container/Container'
 import Title from './Title/Title';
 import Toggler from './Toggler/Toggler'
 import GeneralOverview from './GeneralOverview/GeneralOverview';
@@ -28,16 +29,16 @@ const Layout = (props) => {
     },[themeStyles])
     
     return<div className={classes.maincontainer}>
-        <section className={classes.header}>
+        <Container className={classes.header}>
             <Title title={TEXT.title} subTitle={TEXT.subTitle+DATA_FOLLOWERS}></Title>
             <Toggler onClick={() =>props.setDarkMode(!props.darkMode) } label={TEXT.theme}> </Toggler>
-        </section>
-        <section>
+        </Container>
+        <Container className={classes.generalOverview}>
             <GeneralOverview contents={DATA_SUMMARY} />
-        </section>
-        <section>
-            <DailyOverview contents={DATA_OVERVIEW} />
-        </section>
+        </Container>
+        <Container className={classes.dailyOverview} >
+            <DailyOverview contents={DATA_OVERVIEW} title={TEXT.todayOverview}/>
+        </Container>
  
     </div>
 

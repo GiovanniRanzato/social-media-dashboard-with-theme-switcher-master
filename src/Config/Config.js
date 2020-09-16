@@ -23,7 +23,8 @@ export const TEXT = {
     title: "Social Media Dashboard",
     subTitle:"Total Followers: ",
     theme:"Dark Mode",
-    dailyTrendLabel: "Today",
+	dailyTrendLabel: "Today",
+	todayOverview: "Overview - Today"
 }
 
 export const DATA_FOLLOWERS = "23,004";

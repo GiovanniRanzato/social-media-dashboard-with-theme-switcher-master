@@ -44,3 +44,11 @@ input:checked + .slider{
 .switchunchecked{
     background: var(--theme-text-secondary);
 }
+@media only screen and (min-width: 600px){
+    .container {
+        border-top: 0px transparent;
+    }
+    .label{
+        margin-right: 12px;
+    }
+}

@@ -26,6 +26,11 @@
   
   /* SHAPING */
   --shape-border-radius: 10px;
+
+  /* BREAKPOINTS */
+  --break-1:  600px;
+  --break-2:  900px;
+  --break-3:  1400px;
 }
 * {
   box-sizing: border-box;

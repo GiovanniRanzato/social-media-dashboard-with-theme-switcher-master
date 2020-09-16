@@ -5,7 +5,7 @@ import {kFormatter, defineStyle} from '../../Shared/shared';
 import Clickable from '../../Hoc/Clickable/Clickable';
 
 const DailyOverview = (props) => {
-    const render = props.contents.map(content => {
+    const cards = props.contents.map(content => {
         const trendStyle=defineStyle(content.percentTrend, [classes.trendStable,classes.trendPositive,classes.trendNegative]);
         return (<Clickable key={content.id} className={classes.container}>
             <div className={classes.top}>
@@ -18,6 +18,9 @@ const DailyOverview = (props) => {
             </div>
         </Clickable>);
     });
-    return <React.Fragment>{render}</React.Fragment>
+    return <React.Fragment>
+        <div className={classes.title}>{props.title}</div>
+        {cards}
+        </React.Fragment>
 }
 export default DailyOverview; 

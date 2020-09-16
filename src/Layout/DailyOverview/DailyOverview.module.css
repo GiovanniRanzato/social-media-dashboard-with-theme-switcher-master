@@ -2,7 +2,7 @@
     height: 125px;
     background: var(--theme-card-bg);
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-top: 12px;
     padding: 26px;
     display: flex;
     flex-flow: column;
@@ -61,4 +61,25 @@
 .trendStable::before{
     border-color: transparent;
 }
-
+.title{
+    width: 100%;
+    margin: 24px 0;
+    font-size: 25px;
+    font-weight: var(--text-font-weight-bold);
+}
+@media only screen and (min-width:600px){
+    .container{
+        margin-bottom: 12px;
+        width: 255px;
+    }
+}
+@media only screen and (min-width:900px){
+    .container{
+        width: 385px;
+    }
+}
+@media only screen and (min-width:1400px){
+    .container{
+        width: 255px;
+    }
+}
