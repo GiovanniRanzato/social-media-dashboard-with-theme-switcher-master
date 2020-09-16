@@ -33,12 +33,12 @@
     background-color: var(--theme-bg) ;
     position: absolute;
     z-index: 1;
-    left: 3px;
+    right: 3px;
     top: 3px;
     transition: 0.5s;
 }
 input:checked + .slider{
-    transform: translateX(25px);
+    transform: translateX(-25px);
 
 }
 .switchunchecked{
