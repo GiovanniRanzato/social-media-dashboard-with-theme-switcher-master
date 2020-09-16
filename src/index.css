@@ -10,25 +10,6 @@
   --color-in-gr: linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%) );
   --color-yt: hsl(348, 97%, 39%);
   
-  /* DARK THEME */
-  /* 
-  --dark-toggle: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  --dark-bg: hsl(230, 17%, 14%);
-  --dark-top-bg-pattern: hsl(232, 19%, 15%);
-  --dark-card-bg: hsl(228, 28%, 20%);
-  --dark-text: white;
-  --dark-text-secondary: hsl(228, 34%, 66%); 
-  */
-  /* LIGHT THEME */
-  /*   
-  --light-toggle: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  --light-bg: hsl(0, 0%, 100%);
-  --light-top-bg-pattern: hsl(225, 100%, 98%);
-  --light-card-bg: hsl(227, 47%, 96%);
-  --light-text:hsl(230, 17%, 14%);
-  --light-text-secondary: hsl(228, 12%, 44%); 
-  */
-  
   /* ACTIVE THEME */
   --theme-toggle: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --theme-bg: hsl(0, 0%, 100%);
@@ -37,11 +18,14 @@
   --theme-text:hsl(230, 17%, 14%);
   --theme-text-secondary: hsl(228, 12%, 44%);
 
-  /** TYPOGRAPHY */
+  /* TYPOGRAPHY */
   --text-font-size: 14px;
   --text-font-family: 'Inter', sans-serif;
   --text-font-weight-regular: 400;
   --text-font-weight-bold: 700;
+  
+  /* SHAPING */
+  --shape-border-radius: 10px;
 }
 * {
   box-sizing: border-box;
@@ -66,6 +50,7 @@ body {
   padding: 0;
   color: var(--theme-text);
   background-color:var(--theme-bg);
+  transition:  color 0.5s ease-out;
 
   font-family: var(--text-font-family);
   -webkit-font-smoothing: antialiased;

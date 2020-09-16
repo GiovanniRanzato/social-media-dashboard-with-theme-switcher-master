@@ -1,0 +1,22 @@
+.clickable{
+    position: relative;
+}
+.clickable::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--shape-border-radius);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var(--theme-text);
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.clickable:hover{
+    cursor: pointer;
+}
+.clickable:hover::before{
+    opacity: 0.1;
+}

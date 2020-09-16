@@ -1,0 +1,97 @@
+.card{
+    background-color: var(--theme-card-bg);
+    margin-bottom: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cardBody{
+    height: 215px;
+    padding: 24px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+/* RENDER THE BORDER LINE ON TOP OF THE CARD */
+.cardBody::before{
+    position: absolute;
+    top:0;
+    content: "";
+    width: 100%;
+    height: 4px;
+}
+/* STYLE THE TOP BORDER WITH SOCIAL COLORS*/
+.fb::before {
+    background: var(--color-fb);
+}
+.in::before {
+    background: var(--color-in-gr);
+}
+.tw::before {
+    background-color: var(--color-tw);
+}
+.yt::before {
+    background-color: var(--color-yt);
+}
+
+
+.title{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.title img{
+    margin-right: 8px;
+}
+.title{
+    color: var(--theme-text-secondary);
+    font-weight: var(--text-font-weight-bold);
+}
+.value{
+    text-align: center;
+    font-size:54px;
+    font-weight: var(--text-font-weight-bold);
+}
+.label{
+    color: var(--theme-text-secondary);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.trend{
+    font-weight: var(--text-font-weight-bold);
+    position: relative;
+}
+
+.trend::before{
+    content:"";
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    margin-left: -5px;
+    border-width: 6px;
+    border-style: solid;
+    
+}
+.trendPositive{
+    color: var(--color-success);
+}
+.trendPositive::before{
+    border-color: transparent transparent var(--color-success) transparent;
+}
+.trendNegative{
+    color: var(--color-danger);
+}
+.trendNegative::before{
+    top: 8px;
+    border-color: var(--color-danger) transparent transparent transparent ;
+}
+
+.trendStable{
+    color: var(--theme-text-secondary);
+}
+.trendStable::before{
+    border-color: transparent;
+}

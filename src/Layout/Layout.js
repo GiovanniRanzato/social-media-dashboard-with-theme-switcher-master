@@ -1,13 +1,15 @@
 import React, {useEffect} from 'react';
 // CONFIG
-import { LIGHT_THEME_STYLES, DARK_THEME_STYLES,} from '../Config/Config';
+import { LIGHT_THEME_STYLES, DARK_THEME_STYLES, TEXT, DATA_FOLLOWERS, DATA_OVERVIEW, DATA_SUMMARY} from '../Config/Config';
 
 // STYLES
 import classes from './Layout.module.css'
 
 // COMPONETNS
 import Title from './Title/Title';
-
+import Toggler from './Toggler/Toggler'
+import GeneralOverview from './GeneralOverview/GeneralOverview';
+import DailyOverview from './DailyOverview/DailyOverview';
 
 const setTheme = (theme) => {
     Object.keys(theme).forEach(key => {
@@ -24,17 +26,17 @@ const Layout = (props) => {
     useEffect(()=>{
         setTheme(themeStyles);
     },[themeStyles])
-
-    return<div >
+    
+    return<div className={classes.maincontainer}>
         <section className={classes.header}>
-            <Title title={"GGG"} subTitle={"ffff"}></Title>
-            <div onClick={() =>props.setDarkMode(!props.darkMode) } >TOGGLER </div>
+            <Title title={TEXT.title} subTitle={TEXT.subTitle+DATA_FOLLOWERS}></Title>
+            <Toggler onClick={() =>props.setDarkMode(!props.darkMode) } label={TEXT.theme}> </Toggler>
         </section>
         <section>
-            GENERAL OVERVIE
+            <GeneralOverview contents={DATA_SUMMARY} />
         </section>
         <section>
-            DAILY OVERVIE
+            <DailyOverview contents={DATA_OVERVIEW} />
         </section>
  
     </div>

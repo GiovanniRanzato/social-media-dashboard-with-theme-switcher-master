@@ -1,0 +1,13 @@
+.container{
+    margin-bottom: 12px;
+}
+.title{
+    margin: 0px;
+    font-size: 26px;
+}
+.subTitle{
+    margin: 0px;
+    margin-top:6px;
+    font-weight: var(--text-font-weight-bold);
+    color: var(--theme-text-secondary);
+}

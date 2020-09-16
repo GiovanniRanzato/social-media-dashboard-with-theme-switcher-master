@@ -1,5 +1,8 @@
 .header {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-between;
+}
+.maincontainer{
+    padding: 40px 24px;
 }
