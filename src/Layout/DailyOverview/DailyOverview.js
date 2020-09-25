@@ -19,7 +19,7 @@ const DailyOverview = (props) => {
         </Clickable>);
     });
     return <React.Fragment>
-        <div className={classes.title}>{props.title}</div>
+        <h2 className={classes.title}>{props.title}</h2>
         {cards}
         </React.Fragment>
 }

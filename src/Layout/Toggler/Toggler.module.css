@@ -26,6 +26,9 @@
     position: relative;
     transition: color 0.5s ease-in;
 }
+.switch:hover {
+    background: var(--theme-toggle);
+}
 .slider {
     width: 19px;
     height: 19px;

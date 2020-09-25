@@ -7,8 +7,11 @@
 .maincontainer{
     padding: 40px 24px;
     display: flex;
+    min-height: 100vh;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
+    
 }
 .generalOverview{
     margin-bottom: 12px;

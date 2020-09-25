@@ -17,6 +17,7 @@
   --theme-card-bg: hsl(227, 47%, 96%);
   --theme-text:hsl(230, 17%, 14%);
   --theme-text-secondary: hsl(228, 12%, 44%);
+  --theme-text-h2: white;
 
   /* TYPOGRAPHY */
   --text-font-size: 14px;
@@ -60,5 +61,10 @@ body {
   font-family: var(--text-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+h2 {
+  color: var(--theme-text-h2);
 }
 
