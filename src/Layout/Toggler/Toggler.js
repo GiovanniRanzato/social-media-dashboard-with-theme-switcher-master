@@ -8,7 +8,7 @@ const Toggler = (props) => {
     return <div className={classes.container} >
         <label className={classes.label}>{props.label} </label>
         <Clickable className={classes.switch +" "+switchunchecked} onClick={()=> { setChecked(!checked); props.onClick()}}>
-        <input type={"checkbox"} checked={checked} onChange={()=>null} label={props.label} aria-label={props.label} title={props.label}/> 
+        <input type={"checkbox"} checked={checked} onChange={()=>null}  aria-label={props.label} title={props.label}/> 
             <span className={classes.slider}></span>
         </Clickable>
     </div>;
